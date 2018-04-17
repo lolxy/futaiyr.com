@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="desktop portrait">
+<head id="Head">
+    <title>{$post_title_en}-{$site_seo_title_en}-{$site_name_en}</title>
+    <meta name="keywords" content="{$site_seo_keywords_en}" />
+    <meta name="description" content="{$site_seo_description}">
+    <tc_include file="Public:head" />
+</head>
+<!-- 外部样式 -->
+<body class="font-zh-CN" style="background:url(__TMPL__Public/assets/images/bg-img-02.jpg) top center fixed;">
+	<tc_include file="Public:scripts" />
+  <div id="wrapper" class="home-page">
+  <tc_include file="Public:nav" />
+	<tc_include file="Public:slider" />
+    <!-- ==================== S main ==================== -->
+    <section class="main">
+      <section class="full-page-title-wrap clearfix" skinobjectzone="menu_3688">
+        <div class="full-page-title"><i class="mark-left"></i>
+          <h2>About Us</h2>
+          <i class="mark-right"></i></div>
+      </section>
+      <!-- S page-menu -->
+      <section class="full-page-menu" skinobjectzone="menu_3763">
+        <div class="full-page-menu-content">
+          <div class="page-width">
+            <ul class="clearfix">
+              <li <?php if($id==1){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>1))}">About Us</a></li>
+              <li <?php if($id==2){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>2))}">Organizational</a></li>
+              <li <?php if($id==3){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>3))}">Qualification</a></li>
+              <li <?php if($id==4){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>4))}">Culture</a></li>
+              <li <?php if($id==5){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>5))}">History</a></li>
+              <li <?php if($id==6){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>6))}">Vision</a></li>
+            </ul>
+            <!-- 没有子菜单时输出 --></div>
+        </div>
+      </section>
+      <!-- S page-menu -->
+
+      <div class="page-width clearfix"><!-- S full-page-content -->
+        <div class="full-page-content">
+          <div id="a1portalSkin_mainArea" class="full-page-content-wrapper">
+            <div class="module-default">
+              <div class="module-inner">
+                <div class="module-content">
+                  <div class="portfolio-list">
+                    
+                      <php>
+                        $zigezhengshu=sp_getzhengshu("zgzs");
+                      </php>
+                      <foreach name="zigezhengshu" item="vo">
+                      <?php
+                      if($key%4==0){
+                      ?>
+                      	<ul class="column marg-per2 clearfix">
+                      <?php
+                      }
+                      ?>
+                      <li class="col-4-1" data-animate="fadeInUp" data-delay="{$key*200+200}">
+                        <div class="portfolio-img"><a href="{:sp_get_asset_upload_path($vo['slide_pic'])}" data-lightbox="imagezoom" data-title="{$vo.slide_name_en}"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" alt="{$vo.slide_name_en}"><span class="opacity-overlay"><i class="icon-zoom"></i></span></a></div>
+                        <div class="portfolio-title">
+                          <h2><a href="{:sp_get_asset_upload_path($vo['slide_pic'])}" rel="imgZoom-group-title" title="{$vo.slide_name_en}">{$vo.slide_name_en}</a></h2>
+                        </div>
+                      </li>
+                      <?php
+                      if($key>0 && $key%3==0){
+                      ?>
+                      	</ul>
+                      <?php
+                      }
+                      ?>
+                      </foreach>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+  $(document).ready(function(){
+   //弹窗
+   /*$('a[rel=imgZoom-group],a[rel=imgZoom-group-title]').fancybox({
+    'transitionIn'  : 'elastic',
+    'transitionOut'  : 'elastic',    
+    'hideOnOverlayClick': false,
+    'centerOnScroll' : true,
+    'overlayColor'  : '#000',
+    'padding'   : '0'
+   });*/
+  });
+</script>
+    <!-- ==================== E main ==================== -->
+    <tc_include file="Public:footer"/>
+</body>
+</html>

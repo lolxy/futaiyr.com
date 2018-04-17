@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbortMultipartUploadCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942504328016" remote="131230306800000000" Dst="0" />
+<file name="CompleteMultipartUploadCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942504640397" remote="131230306800000000" Dst="0" />
+<file name="CopyObjectCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942506984180" remote="131230306800000000" Dst="0" />
+<file name="CreateBucketCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942507296816" remote="131230306800000000" Dst="0" />
+<file name="DeleteBucketCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942509640472" remote="131230306800000000" Dst="0" />
+<file name="DeleteObjectCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942509796729" remote="131230306800000000" Dst="0" />
+<file name="GeneratePresignedUrlCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942512296881" remote="131230306800000000" Dst="0" />
+<file name="GetBucketAclCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942512296881" remote="131230306800000000" Dst="0" />
+<file name="GetObjectCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942514796925" remote="131230306800000000" Dst="0" />
+<file name="InitiateMultipartUploadCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942514953173" remote="131230306800000000" Dst="0" />
+<file name="ListBucketsCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942517296962" remote="131230306800000000" Dst="0" />
+<file name="ListMultipartUploadsCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942517453095" remote="131230306800000000" Dst="0" />
+<file name="ListObjectsCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942519953126" remote="131230306800000000" Dst="0" />
+<file name="ListPartsCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942519953126" remote="131230306800000000" Dst="0" />
+<file name="OSSCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942522296912" remote="131230306800000000" Dst="0" />
+<file name="PutObjectCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942522453164" remote="131230306800000000" Dst="0" />
+<file name="SetBucketAclCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942524797077" remote="131230306800000000" Dst="0" />
+<file name="UploadPartCommand.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942524953204" remote="131230306800000000" Dst="0" />
+</dwsync>

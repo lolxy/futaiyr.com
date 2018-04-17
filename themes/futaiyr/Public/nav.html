@@ -1,0 +1,120 @@
+{:hook('body_start')}
+<header class="top header-v2 desktops-section default-top">
+  <div class="top-main">
+    <div class="page-width clearfix">
+      <div class="logo float-left" skinobjectzone="HtmlLogo_1440"><a href="__ROOT__"><img src="{:sp_get_asset_upload_path($site_logo)}" alt="" width="281" height="70"></a></div>
+      <!-- end of logo -->
+      <div class="top-main-content float-right"><!-- S language -->
+        <div class="language" skinobjectzone="HtmlLanguage_1502"><a href="?l=en-us" class="first-level"><span style="background-image:url(__TMPL__Public/assets/images/en-US.png);" class="language-ico">English</span></a><a href="?l=zh-cn" class="first-level"><span style="background-image:url(__TMPL__Public/assets/images/zh-CN.png);" class="language-ico">中文简体</span></a></div>
+        <!-- E language -->
+        <div id="a1portalSkin_topAreaA" class="top-widget float-right"><!-- Start_Module_63155 --><a name="13555" id="13555"></a>
+          <div class="module-default module-no-margin">
+            <div class="module-inner">
+              <div id="a1portalSkin_ctr6315563155_mainArea" class="module-content"><!-- Start_Module_63155 -->
+                <div class="qhd-content">
+                  <p> <img alt="" src="__TMPL__Public/assets/images/1ffcfb1b-a3e4-4cb2-883d-30653b282e12.png" style="width: 29px; height: 29px;">&nbsp;<span style="font-size:22px;"><span style="color:#ff0000;">全国服务电话：{$service_tel}</span></span></p>
+                </div>
+                <!-- End_Module_63155 --></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- E top-main -->
+  <div class="clear"></div>
+  <div class="nav-wrapper">
+    <div class="page-width clearfix"><!-- S nav -->
+      <nav class="nav">
+        <div class="main-nav clearfix">
+          <?php
+			$effected_id="main-menu";
+		  	$filetpl="<a href='\$href' target='\$target'>\$label</a>";
+		  	$foldertpl="<a href='\$href' target='\$target' class='dropdown-toggle' data-toggle='dropdown'>\$label</a>";
+		  	$ul_class="dropdown-menu" ;
+		  	$li_class="li-class" ;
+		  	$style="sf-menu sf-js-enabled";
+		  	$showlevel=6;
+		  	$dropdown='dropdown';
+		  	echo sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
+		?>
+        </div>
+      </nav>
+      <!-- E nav--></div>
+  </div>
+</header>
+    <!-- S touch-top-wrapper -->
+    <div class="touch-top mobile-section clearfix">
+      <div class="touch-top-wrapper clearfix">
+        <div class="touch-logo"><a href="__ROOT__"><img src="{:sp_get_asset_upload_path($site_logo)}" alt="" width="200" height="50"></a></div>
+        <!-- S touch-navigation -->
+        <div class="touch-navigation">
+          <div class="touch-toggle">
+            <ul>
+              <li class="touch-toggle-item-first"><a href="javascript:;" class="drawer-language" data-drawer="drawer-section-language"><i class="touch-icon-language"></i><span>语言</span></a></li>
+              <li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu" data-drawer="drawer-section-menu"><i class="touch-icon-menu"></i><span>导航</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- E touch-navigation --></div>
+      <!-- S touch-top -->
+      <div class="touch-toggle-content touch-top-home">
+        <div class="drawer-section drawer-section-language">
+          <ul class="touch-language clearfix">
+            <li><a href="?l=en-us">English</a></li>
+            <li><a href="?l=zh-cn">中文简体</a></li>
+          </ul>
+        </div>
+        <div class="drawer-section drawer-section-menu">
+          <div class="touch-menu">
+            <?php
+                $effected_id="main-menu";
+                $filetpl="<a href='\$href' target='\$target'>\$label</a>";
+                $foldertpl="<a href='javascript:;' target='\$target' class='dropdown-toggle' data-toggle='dropdown'>\$label <i class='touch-arrow-down'></i></a>";
+                $ul_class="dropdown-menu" ;
+                $li_class="li-class" ;
+                $style="";
+                $showlevel=6;
+                $dropdown='dropdown';
+                echo sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
+            ?>
+          </div>
+        </div>
+        <script type="text/javascript">
+    $(document).ready(function(){
+     
+     $(".touch-toggle a").click(function(event){
+      var className = $(this).attr("data-drawer");
+      
+      if( $("."+className).css('display') == 'none' ){      
+       $("."+className).slideDown().siblings(".drawer-section").slideUp();
+      }else{
+       $(".drawer-section").slideUp(); 
+      }
+      event.stopPropagation();
+     });
+     
+     /*$(document).click(function(){
+      $(".drawer-section").slideUp();     
+     })*/
+	 $("#main-menu a").each(function(){
+		if ($(this)[0].href == String(window.location) && $(this).attr('href')!="") {
+			$(this).parents("li").addClass("current");
+		}
+    });
+     
+     $('.touch-menu a').click(function(){     
+      if( $(this).next().is('ul') ){
+       if( $(this).next('ul').css('display') == 'none' ){
+        $(this).next('ul').slideDown();
+        $(this).find('i').attr("class","touch-arrow-up");     
+       }else{
+        $(this).next('ul').slideUp();
+        $(this).next('ul').find('ul').slideUp();
+        $(this).find('i').attr("class","touch-arrow-down");
+       }   
+      }
+     });
+    });
+</script></div>
+</div>

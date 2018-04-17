@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AccessControlPolicy.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942527609620" remote="131230306800000000" Dst="0" />
+<file name="Bucket.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942529953269" remote="131230306800000000" Dst="0" />
+<file name="CompleteMultipartUploadResult.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942530109664" remote="131230306800000000" Dst="0" />
+<file name="CopyObjectResult.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942532453434" remote="131230306800000000" Dst="0" />
+<file name="InitiateMultipartUploadResult.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942532609573" remote="131230306800000000" Dst="0" />
+<file name="MultipartUpload.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942535109729" remote="131230306800000000" Dst="0" />
+<file name="MultipartUploadsListing.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942535109729" remote="131230306800000000" Dst="0" />
+<file name="OSSError.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942537609760" remote="131230306800000000" Dst="0" />
+<file name="OSSErrorCode.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942537766017" remote="131230306800000000" Dst="0" />
+<file name="OSSObject.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942540266055" remote="131230306800000000" Dst="0" />
+<file name="OSSObjectSummary.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942540266055" remote="131230306800000000" Dst="0" />
+<file name="ObjectListing.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942542766089" remote="131230306800000000" Dst="0" />
+<file name="OSSOptions.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942542922262" remote="131230306800000000" Dst="0" />
+<file name="Owner.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942545422377" remote="131230306800000000" Dst="0" />
+<file name="PartListing.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942545422377" remote="131230306800000000" Dst="0" />
+<file name="PartSummary.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942547766036" remote="131230306800000000" Dst="0" />
+<file name="PutObjectResult.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942548078669" remote="131230306800000000" Dst="0" />
+<file name="UploadPartResult.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942550422331" remote="131230306800000000" Dst="0" />
+</dwsync>

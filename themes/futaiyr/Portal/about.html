@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)language_zh-CN -->
+<html class="desktop portrait">
+<head id="Head">
+    <title>{$post_title}-{$site_seo_title}-{$site_name}</title>
+    <meta name="keywords" content="{$site_seo_keywords}" />
+    <meta name="description" content="{$site_seo_description}">
+    <tc_include file="Public:head" />
+</head>
+<!-- 外部样式 -->
+<body class="font-zh-CN" style="background:url(__TMPL__Public/assets/images/bg-img-02.jpg) top center fixed;">
+<tc_include file="Public:scripts" />
+  <div id="wrapper" class="home-page">
+  <tc_include file="Public:nav" />
+	<tc_include file="Public:slider" />
+    <!-- ==================== S main ==================== -->
+    <?php
+        $id=$_GET['id'];
+        $page=sp_sql_page($id);
+    ?>
+    <section class="main">
+      <section class="full-page-title-wrap clearfix">
+        <div class="full-page-title"><i class="mark-left"></i>
+          <h2>关于金百合</h2>
+          <i class="mark-right"></i></div>
+      </section>
+      <!-- S page-menu -->
+      <section class="full-page-menu" skinobjectzone="menu_3763">
+        <div class="full-page-menu-content">
+          <div class="page-width">
+            <ul class="clearfix">
+              <li <?php if($id==1){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>1))}">公司简介</a></li>
+              <li <?php if($id==2){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>2))}">组织机构</a></li>
+              <li <?php if($id==3){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>3))}">资格证书</a></li>
+              <li <?php if($id==4){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>4))}">企业文化</a></li>
+              <li <?php if($id==5){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>5))}">发展历程</a></li>
+              <li <?php if($id==6){?>class="current"<?php } ?>><a href="{:leuu('Portal/page/index',array('id'=>6))}">企业愿景</a></li>
+            </ul>
+            <!-- 没有子菜单时输出 --></div>
+        </div>
+      </section>
+      <!-- S page-menu -->
+      <div class="page-width clearfix"><!-- S full-page-content -->
+        <div class="full-page-content">
+          <div id="a1portalSkin_mainArea" class="full-page-content-wrapper">
+          <a name="13330" id="13330"></a>
+            <div class="module-default">
+              <div class="module-inner">
+                <div class="module-content">
+                  <div class="qhd-content">
+                    {$page['post_content']}
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <!-- ==================== E main ==================== -->
+    <tc_include file="Public:footer"/>
+</body>
+</html>

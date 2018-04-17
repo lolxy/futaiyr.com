@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="desktop portrait">
+<head id="Head">
+    <title>{$term.name}-{$site_seo_title}-{$site_name}</title>
+    <meta name="keywords" content="{$site_seo_keywords}" />
+    <meta name="description" content="{$site_seo_description}">
+    <tc_include file="Public:head" />
+</head>
+<!-- 外部样式 -->
+<body class="font-zh-CN" style="background:url(__TMPL__Public/assets/images/bg-img-02.jpg) top center fixed;">
+	<tc_include file="Public:scripts" />
+  <div id="wrapper" class="home-page">
+  <tc_include file="Public:nav" />
+  <tc_include file="Public:slider1" />
+    <!-- ==================== S main ==================== -->
+    <section class="main">
+      <div class="page-width clearfix"><!-- S content -->
+        <section class="content float-right"><!-- S page-title -->
+          <section class="page-title page-title-inner clearfix"><!-- S breadcrumbs -->
+            <php>
+            $breadcrumb = sp_get_breadcrumb($cat_id);
+            </php>
+            
+            <div class="breadcrumbs float-right"><span>当前位置：</span><a class="breadcrumbs-home" href="__ROOT__">首页</a>
+            <foreach name="breadcrumb" item="vo">
+            <a href="{:leuu('portal/list/index',array('id'=>$vo['term_id']))}">>{$vo.name}</a>
+            </foreach>
+            <a href="{:leuu('portal/list/index',array('id'=>$term['term_id']))}">>{$term.name}</a></div>
+            <!-- E breadcrumbs --><!-- S page-name -->
+            <div class="page-name float-left">
+              <h2>{$term.name}</h2>
+            </div>
+            <!-- E page-name --></section>
+          <!-- E page-title -->
+          <div id="a1portalSkin_mainArea" class="content-wrapper">
+          		<php>
+                	$cterms=sp_get_child_terms($cat_id); 
+                    $termids=null; 
+                    foreach($cterms as $vo){
+                        $ctermid = sp_get_child_terms($vo['term_id']);
+                        $termids[]=$vo['term_id'];
+                        foreach($ctermid as $vos){
+                            $termids[]=$vos['term_id'];	
+                        }
+                    }
+                    $termsid = empty($termids)?$cat_id:$cat_id.','.implode(',',$termids);
+					$lists = sp_sql_posts_paged("cid:$termsid;order:post_date DESC;",10);
+				</php>
+            <div class="module-default">
+              <div class="module-inner">
+                <div class="module-content">
+                  <div class="portfolio-list product-list">
+                  		<notempty name="lists['posts']">
+                      <volist name="lists['posts']" id="vo">
+                        <php>
+                            $smeta=json_decode($vo['smeta'], true);
+                        </php>
+                        
+                        <?php
+                      if($key%3==0){
+                      ?>
+                      	<ul class="column clearfix">
+                      <?php
+                      }
+                      ?>
+                      <li class="col-3-1" data-animate="fadeInUp" data-delay="{$key*200+200}">
+                        <div class="product-item">
+                          <div class="portfolio-img">
+                          <a href="{:leuu('article/index',array('id'=>$vo['object_id'],'cid'=>$vo['term_id']))}" target="_blank"><if condition="empty($smeta['thumb'])"> 
+								<img src="__TMPL__Public/assets/images/default_tupian1.png" alt="{$vo.post_title}"/>
+							<else /> 
+								<img src="{:sp_get_asset_upload_path($smeta['thumb'])}" alt="{$vo.post_title}" />
+							</if></a></div>
+                          <div class="portfolio-title">
+                            <h2><a href="{:leuu('article/index',array('id'=>$vo['object_id'],'cid'=>$vo['term_id']))}" target="_blank">{$vo.post_title}</a></h2>
+                          </div>
+                        </div>
+                      </li>
+                      <?php
+                      if($key>0 && $key%2==0){
+                      ?>
+                      	</ul>
+                      <?php
+                      }
+                      ?>
+                      </volist>
+                      <else/>
+                      <p class="nodata">本栏目还没有数据哦！</p>
+                      </notempty>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="pagination"><ul>{$lists['page']}</ul></div>
+          </div>
+        </section>
+        <!-- S content --><!-- S sidebar -->
+        <section class="sidebar float-left">
+          <div id="a1portalSkin_sidebarAreaA" class="sidebar-content">
+            <div class="module module-hlbg">
+              <div class="module-inner">
+                <div class="module-hlbg-title clearfix">
+                  <h3>工业案例</h3>
+                </div>
+                <div class="module-hlbg-content">
+                  <div class="category category-63168 product-category">
+                    <ul>
+                      <php>
+                            $term_id=2;
+                             $terms=sp_get_child_terms($term_id); //获取子分类信息
+                      </php>
+                    <foreach name="terms" item="vo">
+                         <php>
+                         $termss=sp_get_child_terms($vo['term_id']); 
+                         </php>
+                         <empty name="termss">
+                        	<li <?php if($vo['term_id'] == $cat_id){?>class="current"<?php }?>><a href="{:leuu('portal/list/index',array('id'=>$vo['term_id']))}">{$vo.name}</a><i></i></li>
+                        <else />
+                        	<li class="hasChild"><a href="javascript:;">{$vo.name}</a><i></i>
+                            <ul>
+                        <foreach name="termss" item="vos" key="k">
+                        	
+                        	<li <?php if($vos['term_id'] == $cat_id){?>class="current"<?php }?>><a href="{:leuu('portal/list/index',array('id'=>$vos['term_id']))}">{$vos.name}</a></li>
+                        </foreach>
+                        </ul>
+                        </li>
+                        </empty>
+                    </foreach>
+                    </ul>
+                  </div>
+<script type="text/javascript">
+$(function(){
+	$('.category-63168 ul ul').find('li:last').addClass('last');
+	$('.category-63168 ul ul li').each(function(){
+		if($(this).hasClass('current')){
+		  $(this).parents('.hasChild').addClass('current');
+	  	}
+	});
+   $('.category-63168 > ul > li > a').click(function(){
+   if( $(this).parent('li').find('ul') ){
+    $(this).parent('li').find('ul').slideDown('fast');
+    $(this).parent('li').siblings('li').find('ul').slideUp('fast');
+    $(this).parent('li').addClass('current').siblings('li').removeClass('current');
+   }
+  });  
+});
+</script>
+</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- E sidebar --></div>
+    </section>
+    <!-- ==================== E main ==================== -->
+ <tc_include file="Public:footer"/>
+</body>
+</html>

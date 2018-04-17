@@ -1,0 +1,116 @@
+{:hook('footer')}
+    <footer class="footer">
+      <div class="footer-main">
+        <div id="a1portalSkin_footerAreaA" class="page-width clearfix">
+          <div class="module-default">
+            <div class="module-inner">
+              <div class="module-content">
+                <div class="qhd-module">
+                  <div class="column">
+                    <div class="col-5-2 footernav">
+                    <?php
+                        $effected_id="footer-menu";
+                        $filetpl="<a href='\$href' target='\$target'>\$label_en</a>";
+                        $foldertpl="<h2><a href='javascript:;' target='\$target' class='dropdown-toggle' data-toggle='dropdown'>\$label_en <i class='touch-arrow-down'></i></a></h2>";
+                        $ul_class="dropdown-menu" ;
+                        $li_class="li-class" ;
+                        $style="footernav-ul";
+                        $showlevel=6;
+                        $dropdown='dropdown';
+                        echo sp_get_menu("2",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
+                    ?>
+                    </div>
+                    <div class="col-5-2">
+                      <div class="qhd_column_contain">
+                      <a name="13611" id="13611"></a>
+                        <div class="module-default">
+                          <div class="module-inner">
+                            <div class="module-title module-title-default clearfix">
+                              <div class="module-title-content clearfix">
+                                <h3 style="" class="">Contact Us</h3>
+                              </div>
+                            </div>
+                            <div class="module-content">
+                              <div class="qhd-content">
+                                <p> Tel：{$tellphone}<br>
+                                  <span style="line-height: 1.8;">Fax：{$tax}</span><br>
+                                  <span style="line-height: 1.8;">E-mail：{$email}</span><br>
+                                  <span style="line-height: 1.8;">Address：{$address_en}</span></p>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5-1 last">
+                      <div class="qhd_column_contain">
+                      <a name="13612" id="13612"></a>
+                        <div class="module-default module-no-margin">
+                          <div class="module-inner">
+                            <div class="module-content">
+                              <div class="qhd-content">
+                                <p style="text-align: center;"> 
+                                <img alt="Wechat" src="{:sp_get_asset_upload_path($site_erweima)}" style="width: 150px; height: 150px;">
+                                <br>
+                                  Sweep Follow Wechat</p>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==================== E footer ==================== -->
+    <section class="bottom">
+      <div id="a1portalSkin_bottomAreaA" class="page-width clearfix">
+        <div class="module-default">
+          <div class="module-inner">
+            <div class="module-content">
+              <div class="qhd-module">
+                <div class="column">
+                  <div class="col-5-3">
+                    <div class="qhd_column_contain">
+                      <div class="module-default module-no-margin">
+                        <div class="module-inner">
+                          <div class="module-content">
+                            <div class="qhd-content">
+                              <p>{$site_copyright_en}</p>
+                            </div>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5-2 last">
+                    <div class="qhd_column_contain">
+                      <div class="module-default module-no-margin">
+                        <div class="module-inner">
+                          <div class="module-content">
+                            <div class="qhd-content">
+                              <p style="text-align: right;"> 
+                              Powered by: <a href="http://www.ftde360.com/" title="ftde360">ftde360</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+	<!-- E go top -->
+  <div class="gotop-wrapper"><a href="javascript:;" class="fixed-gotop gotop" style="display: none;"></a></div>
+  <!-- E go top -->
+{$site_tongji}

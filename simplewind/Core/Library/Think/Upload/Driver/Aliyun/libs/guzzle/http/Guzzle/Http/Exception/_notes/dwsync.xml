@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BadResponseException.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942179046684" remote="131230306800000000" Dst="0" />
+<file name="ClientErrorResponseException.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942180140452" remote="131230306800000000" Dst="0" />
+<file name="CouldNotRewindStreamException.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942182640365" remote="131230306800000000" Dst="0" />
+<file name="CurlException.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942182796746" remote="131230306800000000" Dst="0" />
+<file name="HttpException.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942185296787" remote="131230306800000000" Dst="0" />
+<file name="MultiTransferException.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942185453035" remote="131230306800000000" Dst="0" />
+<file name="RequestException.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942187796821" remote="131230306800000000" Dst="0" />
+<file name="ServerErrorResponseException.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942188109333" remote="131230306800000000" Dst="0" />
+<file name="TooManyRedirectsException.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942190609361" remote="131230306800000000" Dst="0" />
+</dwsync>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="desktop portrait">
+<head id="Head">
+<title>{$post_title_en}-{$site_seo_title_en}-{$site_name_en}</title>
+<meta name="keywords" content="{$site_seo_keywords_en}" />
+<meta name="description" content="{$site_seo_description}">
+<tc_include file="Public:head" />
+</head>
+<!-- 外部样式 -->
+<body class="font-zh-CN" style="background:url(__TMPL__Public/assets/images/bg-img-02.jpg) top center fixed;">
+<tc_include file="Public:scripts" />
+<div id="wrapper" class="home-page">
+<tc_include file="Public:nav" />
+<tc_include file="Public:serviceslider" />
+<!-- ==================== S main ==================== -->
+<section class="main">
+  <div class="page-width clearfix"><!-- S content -->
+    <section class="content float-right"><!-- S page-title -->
+      <section class="page-title page-title-inner clearfix"><!-- S breadcrumbs -->
+        <php> $breadcrumb = sp_get_breadcrumb($term['term_id']); </php>
+        <div class="breadcrumbs float-right">
+            <span>Position：</span>
+            <a class="breadcrumbs-home" href="__ROOT__">Home</a>
+            <i>&gt;</i>Service & Support<i>&gt;</i><strong>{$post_title_en}</strong></div>
+        <!-- E breadcrumbs --><!-- S page-name -->
+        <div class="page-name float-left">
+          <h2>{$post_title_en}</h2>
+        </div>
+        <!-- E page-name --></section>
+      <!-- E page-title -->
+       <div id="a1portalSkin_mainArea" class="content-wrapper">
+            <div class="module">
+              <div class="module-inner">
+                <div class="module-content">
+                  <div class="qhd-content">
+                    {:htmlspecialchars_decode($post_content_en)}
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- S content --><!-- S sidebar -->
+    <section class="sidebar float-left"><!-- S page-menu -->
+          <section class="page-menu">
+            <div class="page-menu-title">
+              <h3>Service & Support</h3>
+            </div>
+            <div class="page-menu-content">
+                <?php
+                    $effected_id="slider-menu";
+                    $filetpl="<a href='\$href' target='\$target'>\$label_en</a><i></i>";
+                    $foldertpl="<a href='javascript:;' target='\$target' class='dropdown-toggle' data-toggle='dropdown'>\$label_en <i class='touch-arrow-down'></i></a>";
+                    $ul_class="dropdown-menu" ;
+                    $li_class="li-class" ;
+                    $style="slider-menu";
+                    $showlevel=6;
+                    $dropdown='dropdown';
+                    echo sp_get_menu("4",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
+                ?>
+              <!-- S 没有子菜单时输出 --><!-- E 没有子菜单时输出 --><script type="text/javascript">
+        $(document).ready(function(){
+        $('.page-menu-content ul').find('li:last').addClass('last');
+        $(".slider-menu li").eq(0).addClass("current");
+        $('.page-menu-content > ul > li > a').click(function(){
+         if( $(this).parent('li').find('ul') ){
+          $(this).parent('li').find('ul').slideDown('fast');
+          $(this).parent('li').siblings('li').find('ul').slideUp('fast');
+          $(this).parent('li').addClass('current').siblings('li').removeClass('current');
+         }
+        }); 
+        
+       });
+</script></div>
+          </section>
+          <!-- S page-menu -->
+          <div class="clear"></div>
+          <div id="a1portalSkin_sidebarAreaA" class="QHDEmptyArea sidebar-content"></div>
+        </section>
+    <!-- E sidebar --></div>
+</section>
+<!-- ==================== E main ==================== -->
+<tc_include file="Public:footer"/>
+</body>
+</html>

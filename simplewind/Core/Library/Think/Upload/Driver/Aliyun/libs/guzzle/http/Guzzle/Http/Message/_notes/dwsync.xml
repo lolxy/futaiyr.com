@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractMessage.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942193109398" remote="131230306800000000" Dst="0" />
+<file name="EntityEnclosingRequest.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942193265652" remote="131230306800000000" Dst="0" />
+<file name="EntityEnclosingRequestInterface.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942195765767" remote="131230306800000000" Dst="0" />
+<file name="Header.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942203561484" remote="131230306800000000" Dst="0" />
+<file name="MessageInterface.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942206061527" remote="131230306800000000" Dst="0" />
+<file name="PostFile.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942206061527" remote="131230306800000000" Dst="0" />
+<file name="PostFileInterface.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942208561580" remote="131230306800000000" Dst="0" />
+<file name="Request.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942209186572" remote="131230306800000000" Dst="0" />
+<file name="RequestFactory.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942211374107" remote="131230306800000000" Dst="0" />
+<file name="RequestFactoryInterface.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942211842867" remote="131230306800000000" Dst="0" />
+<file name="RequestInterface.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942214030396" remote="131230306800000000" Dst="0" />
+<file name="Response.php" server="bxu2348540110.my3w.com//htdocs/" local="131277942216217925" remote="131230306800000000" Dst="0" />
+</dwsync>

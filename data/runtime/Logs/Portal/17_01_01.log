@@ -1,0 +1,371 @@
+[ 2017-01-01T20:44:57+08:00 ] 36.251.130.94 /index.php?m=page&a=index&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T20:44:57+08:00 ] 36.251.130.94 /themes/futaiyr/Public/assets/css/lightbox.css.css
+ERR: 无法加载控制器:Themes
+
+[ 2017-01-01T20:45:42+08:00 ] 36.251.130.94 /index.php?m=page&a=index&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T20:48:17+08:00 ] 36.251.130.94 /index.php?m=page&a=index&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T20:48:29+08:00 ] 36.251.130.94 /index.php?g=Portal&m=page&a=index&id=1
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T20:48:32+08:00 ] 36.251.130.94 /index.php?g=Portal&m=page&a=index&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T20:48:34+08:00 ] 36.251.130.94 /index.php?g=Portal&m=page&a=index&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T20:48:37+08:00 ] 36.251.130.94 /index.php?g=Portal&m=page&a=index&id=4
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T20:48:41+08:00 ] 36.251.130.94 /index.php?g=Portal&m=page&a=index&id=5
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T20:48:45+08:00 ] 36.251.130.94 /index.php?g=Portal&m=page&a=index&id=6
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T22:28:22+08:00 ] 36.251.130.94 /index.php?m=page&a=index&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T22:29:47+08:00 ] 36.251.130.94 /index.php?m=page&a=index&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T22:29:55+08:00 ] 36.251.130.94 /
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T22:35:52+08:00 ] 36.251.130.94 /
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T22:42:36+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001102s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002454s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001519s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `ftyr_terms` SET `parent`='0',`name`='产品展示',`description`='',`taxonomy`='product',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='list',`one_tpl`='article' WHERE `term_id` = '1' [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-1' WHERE ( term_id=1 ) [ RunTime:0.0010s ]
+
+[ 2017-01-01T22:42:55+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001065s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002327s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001348s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `ftyr_terms` SET `parent`='0',`name`='工业案例',`description`='',`taxonomy`='picture',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='list_masonry',`one_tpl`='article' WHERE `term_id` = '2' [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-2' WHERE ( term_id=2 ) [ RunTime:0.0011s ]
+
+[ 2017-01-01T22:43:26+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001055s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002368s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001374s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('0','服务与支持','','service','','','','list','article') [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-3' WHERE ( term_id=3 ) [ RunTime:0.0011s ]
+
+[ 2017-01-01T22:43:33+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001057s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002341s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001313s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('0','新闻中心','','article','','','','list','article') [ RunTime:0.0011s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-4' WHERE ( term_id=4 ) [ RunTime:0.0010s ]
+
+[ 2017-01-01T22:44:02+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001144s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002498s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001542s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001590s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('1','工业水漆','','product','','','','list','article') [ RunTime:0.0013s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-1-5' WHERE ( term_id=5 ) [ RunTime:0.0014s ]
+
+[ 2017-01-01T22:44:16+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001072s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002355s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001328s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('1','工程水漆','','product','','','','list','article') [ RunTime:0.0013s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-1-6' WHERE ( term_id=6 ) [ RunTime:0.0014s ]
+
+[ 2017-01-01T22:44:31+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001083s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002388s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001323s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001370s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('6','外墙水漆','','product','','','','list','article') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=6 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-1-6-7' WHERE ( term_id=7 ) [ RunTime:0.0011s ]
+
+[ 2017-01-01T22:44:41+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001082s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002357s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001300s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001348s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('6','艺术水漆','','product','','','','list','article') [ RunTime:0.0014s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=6 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-1-6-8' WHERE ( term_id=8 ) [ RunTime:0.0012s ]
+
+[ 2017-01-01T22:45:01+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001137s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002439s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001530s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001611s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('1','家装水漆','','product','','','','list','article') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-1-9' WHERE ( term_id=9 ) [ RunTime:0.0012s ]
+
+[ 2017-01-01T22:45:11+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001087s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002411s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001380s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('9','内墙水漆','','product','','','','list','article') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=9 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-1-9-10' WHERE ( term_id=10 ) [ RunTime:0.0011s ]
+
+[ 2017-01-01T22:45:21+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001079s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002398s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001441s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('9','木器水漆','','product','','','','list','article') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=9 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-1-9-11' WHERE ( term_id=11 ) [ RunTime:0.0012s ]
+
+[ 2017-01-01T22:45:43+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001261s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002753s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001431s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001492s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('9','多功能水漆','','product','','','','list','article') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=9 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-1-9-12' WHERE ( term_id=12 ) [ RunTime:0.0011s ]
+
+[ 2017-01-01T22:45:50+08:00 ] 36.251.130.94 /
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T22:46:19+08:00 ] 36.251.130.94 /index.php?m=page&a=index&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+
+[ 2017-01-01T22:46:47+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001086s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002396s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001283s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('3','技术实力','','service','','','','list','article') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-3-13' WHERE ( term_id=13 ) [ RunTime:0.0011s ]
+
+[ 2017-01-01T22:47:06+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001107s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002409s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001317s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('3','疑问解答','','service','','','','list','article') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-3-14' WHERE ( term_id=14 ) [ RunTime:0.0012s ]
+
+[ 2017-01-01T22:47:20+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001141s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002461s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001331s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001380s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('3','下载中心','','service','','','','list','article') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-3-15' WHERE ( term_id=15 ) [ RunTime:0.0011s ]
+
+[ 2017-01-01T22:47:37+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001055s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002345s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001323s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('4','公司新闻','','article','','','','list','article') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=4 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-4-16' WHERE ( term_id=16 ) [ RunTime:0.0012s ]
+
+[ 2017-01-01T22:47:45+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001343s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002761s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001445s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001498s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('4','行业动态','','article','','','','list','article') [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=4 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-4-17' WHERE ( term_id=17 ) [ RunTime:0.0010s ]
+
+[ 2017-01-01T22:47:57+08:00 ] 36.251.130.94 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001188s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002564s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001463s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001520s ]
+SQL: SHOW COLUMNS FROM `ftyr_users` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ftyr_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ftyr_terms` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/home/bxu2348540110/htdocs/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `ftyr_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('4','视频中心','','article','','','','list','article') [ RunTime:0.0013s ]
+SQL: SELECT * FROM `ftyr_terms` WHERE ( term_id=4 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `ftyr_terms` SET `path`='0-4-18' WHERE ( term_id=18 ) [ RunTime:0.0011s ]
+
+[ 2017-01-01T22:50:08+08:00 ] 36.251.130.94 /
+NOTIC: D方法实例化没找到模型类Common\Model\VariableModel
+

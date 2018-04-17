@@ -1,0 +1,28 @@
+<?php
+return array(
+    "TITLE" => '标题',
+    "CATEGORY" => '分类',
+    "HITS" => '点击量',
+    "KEYWORDS" => '关键字',
+    "COMMENT_COUNT" => '评论量',
+    "SOURCE" => '来源',
+    "ABSTRACT" => '摘要',
+    "THUMBNAIL" => "缩略图",
+    "AUTHOR" => '作者',
+    "PUBLISH_DATE" => '发布时间',
+	'PORTAL_ADMINPOST_ADD_POST' => '提交资讯',
+  'PORTAL_ADMINPOST_COPY' => '资讯批量复制',
+  'PORTAL_ADMINPOST_EDIT_POST' => '提交编辑',
+  'PORTAL_ADMINPOST_LISTORDERS' => '资讯排序',
+  'PORTAL_ADMINPOST_RECOMMEND' => '资讯推荐',
+  'PORTAL_ADMINPOST_RECYCLEBIN' => '资讯回收',
+  'PORTAL_ADMINPOST_TOP' => '资讯置顶',
+  'PORTAL_ADMINPOST_ADD' => '添加资讯',
+  'PORTAL_ADMINPOST_INDEX' => '资讯管理',
+  'PORTAL_ADMINPOST_CHECK' => '资讯审核',
+  'PORTAL_ADMINPOST_CLEAN' => '彻底删除',
+  'PORTAL_ADMINPOST_DELETE' => '删除资讯',
+  'PORTAL_ADMINPOST_EDIT' => '编辑资讯',
+  'PORTAL_ADMINPOST_MOVE' => '批量移动',
+  'PORTAL_ADMINPOST_RESTORE' => '资讯还原'
+);

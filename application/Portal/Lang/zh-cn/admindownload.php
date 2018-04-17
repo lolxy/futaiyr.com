@@ -1,0 +1,28 @@
+<?php
+return array(
+    "TITLE" => '标题',
+    "CATEGORY" => '分类',
+    "HITS" => '点击量',
+    "KEYWORDS" => '关键字',
+    "COMMENT_COUNT" => '评论量',
+    "SOURCE" => '来源',
+    "ABSTRACT" => '摘要',
+    "THUMBNAIL" => "缩略图",
+    "AUTHOR" => '作者',
+    "PUBLISH_DATE" => '发布时间',
+	'PORTAL_ADMINDOWNLOAD_ADD_POST' => '提交添加',
+  'PORTAL_ADMINDOWNLOAD_COPY' => '下载批量复制',
+  'PORTAL_ADMINDOWNLOAD_EDIT_POST' => '提交编辑',
+  'PORTAL_ADMINDOWNLOAD_LISTORDERS' => '下载排序',
+  'PORTAL_ADMINDOWNLOAD_RECOMMEND' => '下载推荐',
+  'PORTAL_ADMINDOWNLOAD_RECYCLEBIN' => '下载回收',
+  'PORTAL_ADMINDOWNLOAD_TOP' => '下载置顶',
+  'PORTAL_ADMINDOWNLOAD_ADD' => '添加下载',
+  'PORTAL_ADMINDOWNLOAD_INDEX' => '下载管理',
+  'PORTAL_ADMINDOWNLOAD_CHECK' => '下载审核',
+  'PORTAL_ADMINDOWNLOAD_CLEAN' => '彻底删除',
+  'PORTAL_ADMINDOWNLOAD_DELETE' => '删除下载',
+  'PORTAL_ADMINDOWNLOAD_EDIT' => '编辑下载',
+  'PORTAL_ADMINDOWNLOAD_MOVE' => '批量移动',
+  'PORTAL_ADMINDOWNLOAD_RESTORE' => '下载还原'
+);

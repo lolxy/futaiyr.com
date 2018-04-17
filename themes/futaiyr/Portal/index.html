@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)language_zh-CN -->
+<html class="desktop portrait">
+<head id="Head">
+    <title>{$site_seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$site_seo_keywords}" />
+    <meta name="description" content="{$site_seo_description}">
+    <tc_include file="Public:head" />
+</head>
+<!-- 外部样式 -->
+<body class="font-zh-CN" style="background:url(__TMPL__Public/assets/images/bg-img-02.jpg) top center fixed;">
+<tc_include file="Public:scripts" />
+  <div id="wrapper" class="home-page">
+  <tc_include file="Public:nav" />
+	<tc_include file="Public:slider" />
+    <!-- ==================== S main ==================== -->
+    <section class="main">
+      <div id="a1portalSkin_mainArea" class="full-screen clearfix">
+        <div class="module-full-screen">
+          <div class="module-inner" data-animate="fadeInUp" data-delay="200">
+            <div class="page-width">
+              <div class="module-full-screen-title">
+                <div class="module-title-content">
+                <i class="mark-left"></i>
+                  <h2>关于我们</h2>
+                  <i class="mark-right"></i></div>
+              </div>
+              <div class="module-full-screen-content">
+                <div class="qhd-module">
+                  <div class="column">
+                    <div class="col-5-2">
+                      <div class="qhd_column_contain">
+                        <div class="module-default">
+                          <div class="module-inner">
+                            <div class="module-content">
+                              <div class="qhd-content">
+                              	<?php
+                                $page=sp_sql_page(1);
+                                $smeta=json_decode($page['smeta'],true);
+                                ?>
+                                <p> 
+                                <a href="{:leuu('page/index',array('id'=>$page[id]))}" target="_blank"><img alt="关于我们" src="{:sp_get_asset_upload_path($smeta['thumb'])}" style="width: 370px; height: 240px;"></a></p>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5-3 last">
+                      <div class="qhd_column_contain">
+                        <div class="module-default">
+                          <div class="module-inner">
+                            <div class="module-content">
+                              <div class="qhd-content">
+                                {$page['post_content']|msubstr=0,330,'utf-8',false}
+                                <p style="text-align:right;"> <a class="btn-medium btn-medium-main" href="{:leuu('page/index',array('id'=>$page[id]))}" target="_blank" title=""><span>查看详情 &gt;&gt;</span></a></p>
+                              </div>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="module-full-screen module-full-screen-gray module-full-screen-bg-img" style="background-image:url(__TMPL__Public/assets/images/f3356d81-d893-4672-b091-756880f90795.jpg);">
+          <div class="module-inner" data-animate="fadeInDown" data-delay="200">
+            <div class="page-width">
+              <div class="module-full-screen-title">
+                <div class="module-title-content"><i class="mark-left"></i>
+                  <h2>产品展示</h2>
+                  <i class="mark-right"></i></div>
+              </div>
+              <div class="module-full-screen-content">
+                <div class="tabs-default tabs-center">
+                  <ul class="tabs-nav clearfix">
+                    	<php>
+                            $term_id=1;
+                             $terms=sp_get_child_terms($term_id); //获取子分类信息
+                      </php>
+                    <foreach name="terms" item="vo">
+                        	<li <?php if($key == 0){?>class="current"<?php }?>><a href="javascript:;">{$vo.name}</a></li>
+                   </foreach>
+                  </ul>
+                  <div class="tabs-panes">
+                     <foreach name="terms" item="vo">
+                    <div class="tab-box clearfix" <?php if($key==0){ ?>style="display: block;"<?php } ?>>
+                      <div class="tab-box-content">
+                        <div class="module-default">
+                          <div class="module-inner">
+                            <div class="module-content">
+                              <div class="portfolio-list product-list">  
+                              <php>   
+                              $ids = $vo['term_id'];
+                              $cterms=sp_get_child_terms($ids);
+                              $termids=null; 
+                    foreach($cterms as $cvo){
+                        $ctermid = sp_get_child_terms($cvo['term_id']);
+                        $termids[]=$cvo['term_id'];
+                        foreach($ctermid as $cvos){
+                            $termids[]=$cvos['term_id'];	
+                        }
+                    }
+                    $termsid = empty($termids)?$ids:$ids.','.implode(',',$termids);                      	$products=sp_sql_posts("cid:$termsid;field:post_title,post_excerpt,object_id,smeta,term_id;order:istop desc,post_date desc;limit:8;"); 
+                              </php>
+                                  <foreach name="products" item="vos" key="k">
+                                  <?php
+                      if($k%4==0){
+                      ?>
+                      	<ul class="column clearfix">
+                      <?php
+                      }
+                      ?>
+                                  <php>$smeta=json_decode($vos['smeta'],true);</php>
+                                  <li class="col-4-1" data-animate="fadeInUp" data-delay="{$k*200+200}">
+                                    <div class="product-item">
+                                      <div class="portfolio-img"><a href="{:leuu('article/index',array('id'=>$vos['object_id'],'cid'=>$vos['term_id']))}" target="_blank">
+							<if condition="empty($smeta['thumb'])"> 
+								<img src="__TMPL__Public/assets/images/default_tupian1.png" class="img-responsive" alt="{$vos.post_title}"/>
+							<else /> 
+								<img src="{:sp_get_asset_upload_path($smeta['thumb'])}" class="img-responsive img-thumbnail" alt="{$vos.post_title}" />
+							</if>
+						</a></div>
+                                      <div class="portfolio-title">
+                                        <h2><a href="{:leuu('article/index',array('id'=>$vos['object_id'],'cid'=>$vos['term_id']))}" target="_blank">{$vos.post_title}</a></h2>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <?php
+                      if($k>0 && $k%3==0){
+                      ?>
+                      	</ul>
+                      <?php
+                      }
+                      ?>
+                                  </foreach>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="tab-more tab-more-center"><a href="{:leuu('portal/list/index',array('id'=>$vo['term_id']))}" target="_blank">查看更多 &gt;&gt;</a></p>
+                    </div>
+                    </foreach>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <!-- S module-full-screen -->
+        <div class="module-full-screen module-full-screen-hl">
+          <div class="module-inner" data-animate="fadeInDown" data-delay="200">
+            <div class="page-width">
+              <div class="module-full-screen-title">
+                <div class="module-title-content"><i class="mark-left"></i>
+                  <h2>服务与支持</h2>
+                  <i class="mark-right"></i></div>
+              </div>
+              <div class="module-full-screen-content">
+                <div class="link-icon">
+                  <ul class="clearfix">
+                    <li><a href="{:leuu('portal/page/index',array('id'=>16))}" target="_blank" class="link-img"><img src="__TMPL__Public/assets/images/c64cebbc-0658-4c72-af68-8d60484ddeb9_48_48_UniformFill.png" alt="技术实力"><span>技术实力</span></a></li>
+                    <li><a href="{:leuu('portal/list/index',array('id'=>14))}" target="_blank" class="link-img"><img src="__TMPL__Public/assets/images/2bfa503f-3bef-4d37-b182-2bef28d892f5_48_48_UniformFill.png" alt="疑问解答"><span>疑问解答</span></a></li>
+                    <li><a href="{:leuu('portal/list/index',array('id'=>21))}" target="_blank" class="link-img"><img src="__TMPL__Public/assets/images/0d6e1c68-d387-4273-87e1-a8c4f95dd27f_48_48_UniformFill.png" alt="下载中心"><span>下载中心</span></a></li>
+                    <li><a href="{:leuu('portal/page/index',array('id'=>21))}" target="_blank" class="link-img"><img src="__TMPL__Public/assets/images/cb6eb9ed-bd26-4740-8144-78af5d4c6204_48_48_UniformFill.png" alt="联系我们"><span>联系我们</span></a></li>
+                  </ul>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="module-full-screen" style="">
+          <div class="module-inner" data-animate="fadeInUp" data-delay="200">
+            <div class="page-width">
+              <div class="module-full-screen-title">
+                <div class="module-title-content"><i class="mark-left"></i>
+                  <h2>最新资讯</h2>
+                  <i class="mark-right"></i></div>
+              </div>
+              <div class="module-full-screen-content">
+                <div class="headlines-list-2col clearfix">
+                   <php>   
+                       $ccterms=sp_get_child_terms(4);
+                       $ctermids=null; 
+                    foreach($ccterms as $ccvo){
+                        $cctermid = sp_get_child_terms($ccvo['term_id']);
+                        $ctermids[]=$ccvo['term_id'];
+                        foreach($cctermid as $ccvos){
+                            $ctermids[]=$ccvos['term_id'];	
+                        }
+                    }
+                    $ctermsid = empty($ctermids)?4:'4,'.implode(',',$ctermids);                      	
+      $lists=sp_sql_posts("cid:$ctermsid;field:post_title,post_excerpt,object_id,smeta,term_id;order:post_modified desc,post_date desc;limit:1;",array('istop'=>1));
+      $newlists=sp_sql_posts("cid:$ctermsid;field:post_title,post_date,post_excerpt,object_id,smeta,term_id;order:post_modified desc,post_date desc;limit:2;",array('recommended'=>1));
+                    </php>
+                    <foreach name="lists" item="new">
+                    <php>$smeta=json_decode($new['smeta'],true);</php>
+                  <div class="headlines-content" data-animate="fadeInUp" data-delay="200">
+                    <p><a href="{:leuu('article/index',array('id'=>$new['object_id'],'cid'=>$new['term_id']))}" target="_blank"><if condition="empty($smeta['thumb'])"> 
+								<img src="__TMPL__Public/assets/images/default_tupian1.png" class="img-responsive" alt="{$new.post_title}"/>
+							<else /> 
+								<img src="{:sp_get_asset_upload_path($smeta['thumb'])}" class="img-responsive img-thumbnail" alt="{$new.post_title}" />
+							</if></a></p>
+                    <h2><a href="{:leuu('article/index',array('id'=>$new['object_id'],'cid'=>$new['term_id']))}" target="_blank">{$new.post_title}</a></h2>
+                    <div class="headlines-content-summary">
+                      <div class="qhd-content">
+                        <p>{$new.post_excerpt|msubstr=0,330,'utf-8',false}</p>
+                      </div>
+                    </div>
+                  </div>
+                  </foreach>
+                  <div class="headlines-others" data-animate="fadeInUp" data-delay="400">
+                    <div class="entry-list entry-list-time-hl entry-set-time-hl">
+                     <volist name="newlists" id="newvo">
+                    <php>$smeta=json_decode($newvo['smeta'],true);</php>
+                      <div class="entry-item">
+                        <div class="time">
+                          <p class="time-day">{:date('d',strtotime($newvo['post_date']))}</p>
+                          <p class="time-date">{:date('Y-m',strtotime($newvo['post_date']))}</p>
+                        </div>
+                        <div class="entry-title">
+                          <h2><a href="{:leuu('article/index',array('id'=>$newvo['object_id'],'cid'=>$newvo['term_id']))}" target="_blank">{$newvo.post_title}</a></h2>
+                        </div>
+                        <div class="entry-summary">
+                          <div class="qhd-content">
+                            <p>{$newvo.post_excerpt|msubstr=0,330,'utf-8',false}</p>
+                          </div>
+                        </div>
+                      </div>
+                      </volist>
+                      </div>
+                    </div>
+                </div>
+                </div>
+              <div class="module-full-screen-more">
+              <a href="{:leuu('portal/list/index',array('id'=>4))}" target="_blank"> 查看更多 &gt;&gt; </a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="module-full-screen module-full-screen-gray" style="">
+          <div class="module-inner" data-animate="fadeInDown" data-delay="200">
+            <div class="page-width">
+              <div class="module-full-screen-title">
+                <div class="module-title-content"><i class="mark-left"></i>
+                  <h2>招商加盟</h2>
+                  <i class="mark-right"></i></div>
+              </div>
+              <div class="module-full-screen-content">
+              	<?php
+                $zsys=sp_sql_page(11);
+                $zsyssmeta=json_decode($zsys['smeta'],true);
+                $jmzc=sp_sql_page(12);
+                $jmzcsmeta=json_decode($jmzc['smeta'],true);
+                $jmtj=sp_sql_page(13);
+                $jmtjsmeta=json_decode($jmtj['smeta'],true);
+                $jmlc=sp_sql_page(14);
+                $jmlcsmeta=json_decode($jmlc['smeta'],true);
+                ?>
+                <div class="qhd-module">
+                  <div class="column">
+                    <div class="col-4-1">
+                      <div class="qhd_column_contain">
+                        <div class="module-default">
+                          <div class="module-inner">
+                            <div class="module-content">
+                              <div class="qhd-content">
+                                <p style="text-align: center;"> 
+                                <a href="{:leuu('page/index',array('id'=>$zsys[id]))}" target="_blank">
+                                <if condition="empty($zsyssmeta['thumb'])"> 
+								<img src="__TMPL__Public/assets/images/default_tupian1.png" class="img-responsive" alt="{$zsys['post_title']}" style="width: 260px; height: 171px;"/>
+							<else /> 
+								<img src="{:sp_get_asset_upload_path($zsyssmeta['thumb'])}" class="img-responsive img-thumbnail" alt="{$zsys['post_title']}" style="width: 260px; height: 171px;"/>
+							</if>
+                                </a></p>
+                                <p style="text-align: center;"> 
+                                <a href="{:leuu('page/index',array('id'=>$zsys[id]))}" target="_blank">{$zsys['post_title']}</a></p>
+                              </div>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4-1">
+                      <div class="qhd_column_contain">
+                        <div class="module-default">
+                          <div class="module-inner">
+                            <div class="module-content">
+                              <div class="qhd-content">
+                                <p style="text-align: center;"> 
+                                <a href="{:leuu('page/index',array('id'=>$jmzc[id]))}" target="_blank">
+                                <if condition="empty($jmzcsmeta['thumb'])"> 
+								<img src="__TMPL__Public/assets/images/default_tupian1.png" class="img-responsive" alt="{$jmzc['post_title']}" style="width: 260px; height: 171px;"/>
+							<else /> 
+								<img src="{:sp_get_asset_upload_path($jmzcsmeta['thumb'])}" class="img-responsive img-thumbnail" alt="{$jmzc['post_title']}" style="width: 260px; height: 171px;"/>
+							</if>
+                                </a></p>
+                                <p style="text-align: center;"> 
+                                <a href="{:leuu('page/index',array('id'=>$jmzc[id]))}" target="_blank">{$jmzc['post_title']}</a></p>
+                              </div>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4-1">
+                      <div class="qhd_column_contain">
+                        <div class="module-default">
+                          <div class="module-inner">
+                            <div class="module-content">
+                              <div class="qhd-content">
+                                <p style="text-align: center;"> 
+                                <a href="{:leuu('page/index',array('id'=>$jmtj[id]))}" target="_blank">
+                                <if condition="empty($jmtjsmeta['thumb'])"> 
+								<img src="__TMPL__Public/assets/images/default_tupian1.png" class="img-responsive" alt="{$jmtj['post_title']}" style="width: 260px; height: 171px;"/>
+							<else /> 
+								<img src="{:sp_get_asset_upload_path($jmtjsmeta['thumb'])}" class="img-responsive img-thumbnail" alt="{$jmtj['post_title']}" style="width: 260px; height: 171px;"/>
+							</if>
+                                </a></p>
+                                <p style="text-align: center;"> 
+                                <a href="{:leuu('page/index',array('id'=>$jmtj[id]))}" target="_blank">{$jmtj['post_title']}</a></p>
+                              </div>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4-1 last">
+                      <div class="qhd_column_contain">
+                        <div class="module-default">
+                          <div class="module-inner">
+                            <div class="module-content">
+                              <div class="qhd-content">
+                                <p style="text-align: center;"> 
+                                <a href="{:leuu('page/index',array('id'=>$jmlc[id]))}" target="_blank">
+                                <if condition="empty($jmlcsmeta['thumb'])"> 
+								<img src="__TMPL__Public/assets/images/default_tupian1.png" class="img-responsive" alt="{$jmlc['post_title']}" style="width: 260px; height: 171px;"/>
+							<else /> 
+								<img src="{:sp_get_asset_upload_path($jmlcsmeta['thumb'])}" class="img-responsive img-thumbnail" alt="{$jmlc['post_title']}" style="width: 260px; height: 171px;"/>
+							</if>
+                                </a></p>
+                                <p style="text-align: center;"> 
+                                <a href="{:leuu('page/index',array('id'=>$jmlc[id]))}" target="_blank">{$jmlc['post_title']}</a></p>
+                              </div>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== E main ==================== -->
+<tc_include file="Public:footer"/>
+</body>
+</html>

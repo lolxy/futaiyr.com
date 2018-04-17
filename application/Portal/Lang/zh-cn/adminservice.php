@@ -1,0 +1,28 @@
+<?php
+return array(
+    "TITLE" => '标题',
+    "CATEGORY" => '分类',
+    "HITS" => '点击量',
+    "KEYWORDS" => '关键字',
+    "COMMENT_COUNT" => '评论量',
+    "SOURCE" => '来源',
+    "ABSTRACT" => '摘要',
+    "THUMBNAIL" => "缩略图",
+    "AUTHOR" => '作者',
+    "PUBLISH_DATE" => '发布时间',
+	'PORTAL_ADMINSERVICE_ADD_POST' => '提交问答',
+  'PORTAL_ADMINSERVICE_COPY' => '问答批量复制',
+  'PORTAL_ADMINSERVICE_EDIT_POST' => '提交编辑',
+  'PORTAL_ADMINSERVICE_LISTORDERS' => '问答排序',
+  'PORTAL_ADMINSERVICE_RECOMMEND' => '问答推荐',
+  'PORTAL_ADMINSERVICE_RECYCLEBIN' => '问答回收',
+  'PORTAL_ADMINSERVICE_TOP' => '问答置顶',
+  'PORTAL_ADMINSERVICE_ADD' => '添加问答',
+  'PORTAL_ADMINSERVICE_INDEX' => '问答管理',
+  'PORTAL_ADMINSERVICE_CHECK' => '问答审核',
+  'PORTAL_ADMINSERVICE_CLEAN' => '彻底删除',
+  'PORTAL_ADMINSERVICE_DELETE' => '删除问答',
+  'PORTAL_ADMINSERVICE_EDIT' => '编辑问答',
+  'PORTAL_ADMINSERVICE_MOVE' => '批量移动',
+  'PORTAL_ADMINSERVICE_RESTORE' => '问答还原'
+);
